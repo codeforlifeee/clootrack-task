@@ -20,6 +20,11 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(',')
 
+# For Railway/Render deployment
+if os.getenv('RAILWAY_ENVIRONMENT') or os.getenv('RENDER'):
+    DEBUG = False
+    ALLOWED_HOSTS = ['*']  # Railway/Render handles this
+
 
 # Application definition
 
