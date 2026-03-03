@@ -2,7 +2,32 @@
 
 A full-stack support ticket management system with AI-powered ticket categorization using LLMs (Large Language Models).
 
-## 🚀 Features
+## � Quick Deploy (Anyone Can Use!)
+
+**Want to try this app instantly?** Pull and run from Docker Hub:
+
+```bash
+# Download deployment file
+curl -O https://raw.githubusercontent.com/codeforlifeee/clootrack-task/main/docker-compose.public.yml
+
+# Edit and add your OpenAI API key
+nano docker-compose.public.yml  # or notepad on Windows
+
+# Start the application
+docker-compose -f docker-compose.public.yml up -d
+```
+
+**That's it!** Open http://localhost:3000 🚀
+
+**Docker Images:**
+- Backend: `codeforlifeee/clootrack-backend:latest`
+- Frontend: `codeforlifeee/clootrack-frontend:latest`
+
+📖 **Full guide:** See [DOCKER_HUB_DEPLOY.md](DOCKER_HUB_DEPLOY.md)
+
+---
+
+## �🚀 Features
 
 - **Submit Support Tickets** - Users can create support tickets with title and description
 - **AI-Powered Classification** - LLM automatically suggests category and priority based on ticket description
